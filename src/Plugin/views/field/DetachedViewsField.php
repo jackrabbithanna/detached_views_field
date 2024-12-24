@@ -93,6 +93,7 @@ class DetachedViewsField extends FieldPluginBase {
     if (!empty($address_result[0]['street_address'])) {
       return $address_result[0]['street_address'];
     }
+    return '';
   }
 
 }
