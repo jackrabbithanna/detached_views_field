@@ -44,6 +44,8 @@ class DetachedViewsField extends FieldPluginBase {
    *   The plugin implementation definition.
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
    *   The entity type manager.
+   * @param \Drupal\civicrm_entity\CiviCrmApi $civicrm_api
+   *   The CiviCRM API Service.
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManagerInterface $entity_type_manager, CiviCrmApi $civicrm_api) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
