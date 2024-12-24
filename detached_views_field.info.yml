@@ -1,0 +1,5 @@
+name: Detached Views Field Plugin Example
+type: module
+description: 'Provides a Views field with calculated value'
+package: Custom
+core_version_requirement: ^11

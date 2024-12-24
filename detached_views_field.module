@@ -1,0 +1,22 @@
+<?php
+
+
+/**
+ * Implements hook_views_data().
+ */
+function detached_views_field_views_data() {
+ /* $data['views']['table']['group'] = t('Custom Global');
+  $data['views']['table']['join'] = [
+    // #global is a special flag which allows a table to appear all the time.
+    '#global' => [],
+  ];*/
+
+  $data['civicrm_contact']['example_views_field'] = [
+    'title' => t('Example Views Field'),
+    'help' => t('An example detached Views field'),
+    'field' => [
+      'id' => 'field_detached_views_field',
+    ],
+  ];
+  return $data;
+}
