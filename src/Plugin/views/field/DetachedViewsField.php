@@ -29,12 +29,14 @@ class DetachedViewsField extends FieldPluginBase {
   protected $entityTypeManager;
 
   /**
-   * The CiviCRM API Service
+   * The CiviCRM API Service.
+   *
    * @var \Drupal\civicrm_entity\CiviCrmApi
    */
   protected $civicrmApi;
+
   /**
-   * Views Cumulative Field constructor.
+   * DetachedViewsField constructor.
    *
    * @param array $configuration
    *   A configuration array containing information about the plugin instance.
@@ -92,4 +94,5 @@ class DetachedViewsField extends FieldPluginBase {
       return $address_result[0]['street_address'];
     }
   }
+
 }
